@@ -9,11 +9,6 @@ const authConfig = {
       clientSecret: process.env.AUTH_GOOGLE_SECRET,
     }),
   ],
-  callbacks: {
-    authorized({ auth, request }) {
-      console.log("Authorized callback:", auth);
-      return !!auth?.user;
-    },
     async signIn({ user, account, profile }) {
       try {
         const existGuest = await getGuest(user.email);
@@ -29,8 +24,7 @@ const authConfig = {
         return false;
       }
     },
-  },
-};
+  };
 
 export const {
   auth,
