@@ -18,6 +18,12 @@ function EmailHandler() {
     const result = await sendEmail(formData);
     if (result) {
       setSentMessage(result.message);
+      setFormData({
+        fromEmail: "yukeshmeganathan2003@gmail.com",
+        toEmail: "",
+        sendSubject: "",
+        sendText: "",
+      });
     } else {
       setSentMessage(result.message);
     }
@@ -79,4 +85,3 @@ function EmailHandler() {
 }
 
 export default EmailHandler;
-
