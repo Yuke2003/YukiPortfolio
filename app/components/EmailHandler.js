@@ -23,53 +23,52 @@ function EmailHandler() {
     }
   };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
-  };
 
   return (
     <div className="flex flex-col items-center justify-center p-6 mx-8">
       <h1 className="mt-20 text-4xl font-medium bg-[#f8f062] p-4 rounded-2xl">
         Send an email for web services
       </h1>
-      <form
+           <form
         className="flex gap-20 bg-white shadow-xl p-12 mt-6 rounded-xl"
         onSubmit={handleSubmit}
       >
         <div className="flex flex-col items-center gap-5">
           <input
-            type="text"
-            placeholder="Enter an Email"
-            name="toEmail"
+            type="email"
+            placeholder="To Email"
             value={formData.toEmail}
-            onChange={handleChange}
             className="w-[670px] bg-gray-200 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+            onChange={(e) =>
+              setFormData({ ...formData, toEmail: e.target.value })
+            }
+            required
           />
           <input
             type="text"
-            placeholder="Enter a Subject"
-            name="sendSubject"
+            placeholder="Subject"
             value={formData.sendSubject}
-            onChange={handleChange}
             className="w-[670px] bg-gray-200 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+            onChange={(e) =>
+              setFormData({ ...formData, sendSubject: e.target.value })
+            }
+            required
           />
           <textarea
-            placeholder="Enter your web services requirement..."
-            name="sendText"
+            placeholder="Text"
             value={formData.sendText}
-            onChange={handleChange}
-            className="w-[670px] bg-gray-200 h-32 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+            className="w-[670px] bg-gray-200 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+            onChange={(e) =>
+              setFormData({ ...formData, sendText: e.target.value })
+            }
+            required
           />
         </div>
 
         <div>
           <button
-            className="bg-[#444] p-3 text-white font-thin w-80 rounded-lg"
             type="submit"
+            className="bg-[#444] p-3 text-white font-thin w-80 rounded-lg cursor-pointer"
           >
             @Send an Email
           </button>
