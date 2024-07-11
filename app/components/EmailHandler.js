@@ -31,7 +31,6 @@ function EmailHandler() {
       </h1>
            <form
         className="flex gap-20 bg-white shadow-xl p-12 mt-6 rounded-xl"
-        onSubmit={handleSubmit}
       >
         <div className="flex flex-col items-center gap-5">
           <input
@@ -72,6 +71,7 @@ function EmailHandler() {
           <button
             type="submit"
             className="bg-[#444] p-3 text-white font-thin w-80 rounded-lg cursor-pointer"
+            onSubmit={handleSubmit}
           >
             @Send an Email
           </button>
