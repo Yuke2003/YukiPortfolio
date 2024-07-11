@@ -9,7 +9,6 @@ async function SignInButton() {
       <button className="flex items-center gap-6 text-lg border border-gray-900 rounded-xl px-10 py-4 font-medium">
         {!session ? (
           <>
-            {" "}
             <Image
               src="https://authjs.dev/img/providers/google.svg"
               alt="Google logo"

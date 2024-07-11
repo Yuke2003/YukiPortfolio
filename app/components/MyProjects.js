@@ -15,7 +15,7 @@ function MyProjects() {
       </div>
       <div className="flex items-center gap-16 flex-wrap  justify-center mt-5">
         <div className="flex flex-col shadow-2xl rounded-lg p-6 w-96 bg-white">
-          <Image src={image01} className=" rounded-lg " alt="pro1"/>
+          <Image src={image01} className=" rounded-lg " alt="pro1" />
           <h3 className="font-extralight mt-5">
             Our Next.js The-World-Oasis full stack hotel room booking app
             leverages Supabase for its backend. Users can easily reserve and
@@ -34,9 +34,9 @@ function MyProjects() {
         <div className="flex flex-col rounded-lg shadow-2xl p-6 w-96 bg-white">
           <Image src={image02} className=" rounded-lg " alt="pro2" />
           <h3 className="font-extralight mt-5">
-            Our Next.js The-World-Oasis full stack hotel room booking app
-            leverages Supabase for its backend. Users can easily reserve and
-            delete bookings, ensuring a seamless and efficient experience
+            The Rental Website is a comprehensive online platform designed to
+            facilitate the rental process for various types of properties,
+            including apartments, houses, and commercial spaces
           </h3>
           <Link
             href="https://minpro-2.onrender.com/"
@@ -49,11 +49,11 @@ function MyProjects() {
         </div>
 
         <div className="flex flex-col rounded-lg shadow-2xl p-6 w-96 bg-white">
-          <Image src={image03} className=" rounded-lg " alt="pro3"/>
+          <Image src={image03} className=" rounded-lg " alt="pro3" />
           <h3 className="font-extralight mt-5">
-            Our Next.js The-World-Oasis full stack hotel room booking app
-            leverages Supabase for its backend. Users can easily reserve and
-            delete bookings, ensuring a seamless and efficient experience
+            The Pizza ordering app using React and Redux Toolkit provides a
+            comprehensive understanding of Redux, including useSelector,
+            useReducer, and Context API in complex applications.
           </h3>
           <Link
             href="https://prismatic-smakager-7432de.netlify.app/"
@@ -66,11 +66,11 @@ function MyProjects() {
         </div>
 
         <div className="flex flex-col rounded-lg shadow-2xl p-6 w-96 bg-white">
-          <Image src={image04} className=" rounded-lg" alt="pro4"/>
+          <Image src={image04} className=" rounded-lg" alt="pro4" />
           <h3 className="font-extralight mt-5">
-            Our Next.js The-World-Oasis full stack hotel room booking app
-            leverages Supabase for its backend. Users can easily reserve and
-            delete bookings, ensuring a seamless and efficient experience
+            In the React project utilizing React Router and a mock API, an issue
+            arises where the system does not successfully update or incorporate
+            the visited country into the application's state or data structure.
           </h3>
           <Link
             href="https://gregarious-fudge-46156f.netlify.app/"
