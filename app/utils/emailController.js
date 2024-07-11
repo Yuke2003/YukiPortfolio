@@ -1,4 +1,3 @@
-// app/sendEmail.js
 
 "use server";
 
