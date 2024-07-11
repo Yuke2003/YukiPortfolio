@@ -7,7 +7,6 @@ function EmailHandler() {
   const [sentMessage, setSentMessage] = useState();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm("service_uzrwk21", "template_c91rxsn", form.current, {
         publicKey: "oosRe9Lw094wJzp3C",
@@ -58,7 +57,6 @@ function EmailHandler() {
             type="submit"
             value="@Send an Email"
             className="bg-[#444] p-3 text-white font-thin w-80 rounded-lg cursor-pointer"
-            
           />
           <h3 className="mt-3 text-center">{sentMessage}</h3>
         </div>
