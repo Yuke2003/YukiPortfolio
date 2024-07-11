@@ -15,7 +15,7 @@ function MyProjects() {
       </div>
       <div className="flex items-center gap-16 flex-wrap  justify-center mt-5">
         <div className="flex flex-col shadow-2xl rounded-lg p-6 w-96 bg-white">
-          <Image src={image01} className=" rounded-lg " />
+          <Image src={image01} className=" rounded-lg " alt="pro1"/>
           <h3 className="font-extralight mt-5">
             Our Next.js The-World-Oasis full stack hotel room booking app
             leverages Supabase for its backend. Users can easily reserve and
@@ -32,7 +32,7 @@ function MyProjects() {
         </div>
 
         <div className="flex flex-col rounded-lg shadow-2xl p-6 w-96 bg-white">
-          <Image src={image02} className=" rounded-lg " />
+          <Image src={image02} className=" rounded-lg " alt="pro2" />
           <h3 className="font-extralight mt-5">
             Our Next.js The-World-Oasis full stack hotel room booking app
             leverages Supabase for its backend. Users can easily reserve and
@@ -49,7 +49,7 @@ function MyProjects() {
         </div>
 
         <div className="flex flex-col rounded-lg shadow-2xl p-6 w-96 bg-white">
-          <Image src={image03} className=" rounded-lg " />
+          <Image src={image03} className=" rounded-lg " alt="pro3"/>
           <h3 className="font-extralight mt-5">
             Our Next.js The-World-Oasis full stack hotel room booking app
             leverages Supabase for its backend. Users can easily reserve and
@@ -66,7 +66,7 @@ function MyProjects() {
         </div>
 
         <div className="flex flex-col rounded-lg shadow-2xl p-6 w-96 bg-white">
-          <Image src={image04} className=" rounded-lg" />
+          <Image src={image04} className=" rounded-lg" alt="pro4"/>
           <h3 className="font-extralight mt-5">
             Our Next.js The-World-Oasis full stack hotel room booking app
             leverages Supabase for its backend. Users can easily reserve and

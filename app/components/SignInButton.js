@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { auth } from "../utils/auth";
 import { signInAction } from "../utils/userController";
 
@@ -9,7 +10,7 @@ async function SignInButton() {
         {!session ? (
           <>
             {" "}
-            <img
+            <Image
               src="https://authjs.dev/img/providers/google.svg"
               alt="Google logo"
               height="24"
@@ -19,7 +20,7 @@ async function SignInButton() {
           </>
         ) : (
           <>
-            <img
+            <Image
               src={session.user.image}
               alt="Google logo"
               height="44"

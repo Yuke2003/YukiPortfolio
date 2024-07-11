@@ -12,7 +12,7 @@ async function Header() {
       <div className="bg-white p-3 rounded-full flex items-center shadow-lg justify-between w-[800px]">
         <div className="flex gap-8 items-center">
           <div className="bg-[#fbf469] w-8 h-8 rounded-full flex items-center justify-center">
-            <Image src={image1} className="w-6 h-6 rounded-full bg-[#fbf469]" />
+            <Image src={image1} className="w-6 h-6 rounded-full bg-[#fbf469]" alt="logo"/>
           </div>
           <div>About</div>
           <div>Works</div>

@@ -13,10 +13,10 @@ function MySkills() {
         </h1>
       </div>
       <div className=" flex justify-center items-center gap-6 mt-5 bg-white p-5 mx-24 rounded-lg">
-        <Image src={image1} className="w-64" />
-        <Image src={image2} className="w-64" />
-        <Image src={image3} className="w-64" />
-        <Image src={image4} className="w-64" />
+        <Image src={image1} className="w-64" alt="MERN Stack"/>
+        <Image src={image2} className="w-64" alt="Next Js"/>
+        <Image src={image3} className="w-64" alt="Tailwind css"/>
+        <Image src={image4} className="w-64" alt="Python"/>
       </div>
     </div>
   );
