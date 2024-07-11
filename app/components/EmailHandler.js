@@ -48,6 +48,7 @@ function EmailHandler() {
             type="text"
             placeholder="Enter an Email"
             name="toEmail"
+            required
             value={formData.toEmail}
             onChange={handleChange}
             className="w-[670px] bg-gray-200 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
@@ -56,6 +57,7 @@ function EmailHandler() {
             type="text"
             placeholder="Enter a Subject"
             name="sendSubject"
+            required
             value={formData.sendSubject}
             onChange={handleChange}
             className="w-[670px] bg-gray-200 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
@@ -63,6 +65,7 @@ function EmailHandler() {
           <textarea
             placeholder="Enter your web services requirement..."
             name="sendText"
+            required
             value={formData.sendText}
             onChange={handleChange}
             className="w-[670px] bg-gray-200 h-32 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
