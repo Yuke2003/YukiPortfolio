@@ -36,7 +36,8 @@ function EmailHandler() {
         <div className="flex flex-col items-center gap-5">
           <input
             type="email"
-            placeholder="To Email"
+            placeholder="Enter an Email"
+            name="toEmail"
             value={formData.toEmail}
             className="w-[670px] bg-gray-200 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
             onChange={(e) =>
@@ -46,7 +47,8 @@ function EmailHandler() {
           />
           <input
             type="text"
-            placeholder="Subject"
+            placeholder="Enter a Subject"
+            name="sendSubject"
             value={formData.sendSubject}
             className="w-[670px] bg-gray-200 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
             onChange={(e) =>
@@ -55,9 +57,10 @@ function EmailHandler() {
             required
           />
           <textarea
-            placeholder="Text"
+            placeholder="Enter your web services requirement..."
+            name="sendText"
             value={formData.sendText}
-            className="w-[670px] bg-gray-200 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+            className="w-[670px] bg-gray-200 h-32 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
             onChange={(e) =>
               setFormData({ ...formData, sendText: e.target.value })
             }
