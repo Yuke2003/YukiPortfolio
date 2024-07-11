@@ -13,9 +13,11 @@ function EmailHandler() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+     const sendHtml = `<p>${formData.sendText}</p>`;
+    const emailData = { ...formData, sendHtml };
     console.log("function called");
     try {
-      const response = await fetch("http://localhost:3000/email", {
+      const response = await fetch("http://localhost:8000/email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
