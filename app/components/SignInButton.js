@@ -1,4 +1,3 @@
-"use client";
 import { auth } from "../utils/auth";
 import { signInAction } from "../utils/userController";
 

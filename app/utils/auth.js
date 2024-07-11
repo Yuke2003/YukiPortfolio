@@ -9,26 +9,20 @@ const authConfig = {
       clientSecret: process.env.AUTH_GOOGLE_SECRET,
     }),
   ],
-  callbacks: {
-    authorized({ auth, request }) {
-      console.log("Authorized callback:", auth);
-      return !!auth?.user;
-    },
-    async signIn({ user, account, profile }) {
-      try {
-        const existGuest = await getGuest(user.email);
-        if (!existGuest.data) {
-          await createGuest({
-            email: user.email,
-            username: user.name,
-            photo: user.image,
-          });
-        }
-        return true;
-      } catch {
-        return false;
+  async signIn({ user, account, profile }) {
+    try {
+      const existGuest = await getGuest(user.email);
+      if (!existGuest.data) {
+        await createGuest({
+          email: user.email,
+          username: user.name,
+          photo: user.image,
+        });
       }
-    },
+      return true;
+    } catch {
+      return false;
+    }
   },
 };
 
