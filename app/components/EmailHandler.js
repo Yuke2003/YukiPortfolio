@@ -19,8 +19,8 @@ function EmailHandler() {
     if (result) {
       setSentMessage(result.message);
       setFormData({
-        fromEmail: "yukeshmeganathan2003@gmail.com",
-        toEmail: "",
+        fromEmail: "",
+        toEmail: "yukeshmeganathan2003@gmail.com",
         sendSubject: "",
         sendText: "",
       });
