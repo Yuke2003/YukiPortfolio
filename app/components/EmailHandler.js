@@ -5,8 +5,8 @@ import { sendEmail } from "@/app/utils/emailController"; // Update the path acco
 
 function EmailHandler() {
   const [formData, setFormData] = useState({
-    fromEmail: "",
-    toEmail: "yukeshmeganathan2003@gmail.com",
+    fromEmail: "yukeshmeganathan2003@gmail.com",
+    toEmail: "",
     sendSubject: "",
     sendText: "",
   });
@@ -19,8 +19,8 @@ function EmailHandler() {
     if (result) {
       setSentMessage(result.message);
       setFormData({
-        fromEmail: "",
-        toEmail: "yukeshmeganathan2003@gmail.com",
+        fromEmail: "yukeshmeganathan2003@gmail.com",
+        toEmail: "",
         sendSubject: "",
         sendText: "",
       });
@@ -45,11 +45,11 @@ function EmailHandler() {
       <form className="flex gap-20 bg-white shadow-xl p-12 mt-6 rounded-xl">
         <div className="flex flex-col items-center gap-5">
           <input
-            type="text"
+            type="email"
             placeholder="Enter an Email"
-            name="fromEmail"
+            name="toEmail"
             required
-            value={formData.fromEmail}
+            value={formData.toEmail}
             onChange={handleChange}
             className="w-[670px] bg-gray-200 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
           />
