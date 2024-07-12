@@ -5,8 +5,8 @@ import { sendEmail } from "@/app/utils/emailController"; // Update the path acco
 
 function EmailHandler() {
   const [formData, setFormData] = useState({
-    fromEmail: "yukeshmeganathan2003@gmail.com",
-    toEmail: "",
+    fromEmail: "",
+    toEmail: "yukeshmeganathan2003@gmail.com",
     sendSubject: "",
     sendText: "",
   });
@@ -47,9 +47,9 @@ function EmailHandler() {
           <input
             type="text"
             placeholder="Enter an Email"
-            name="toEmail"
+            name="fromEmail"
             required
-            value={formData.toEmail}
+            value={formData.fromEmail}
             onChange={handleChange}
             className="w-[670px] bg-gray-200 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
           />
